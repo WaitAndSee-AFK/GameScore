@@ -60,9 +60,24 @@ class MainActivity : AppCompatActivity() {
         textViewScoreTeam2.text = score2.toString()
     }
 
+    override fun onRestart() {
+        super.onRestart()
+        Log.d("MainActivity", "Method onRestart")
+    }
+
     override fun onStart() {
         super.onStart()
         Log.d("MainActivity", "Method onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("MainActivity", "Method onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("MainActivity", "Method onPause")
     }
 
     override fun onStop() {
